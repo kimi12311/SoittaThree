@@ -5,12 +5,13 @@ function App() {
     <>
       <div className=''>
         <div className='text-center'>
-          <a target="_blank" className='flex items-center justify-center'>
+          <a target="_blank" className='flex items-center justify-center animate-pulse'>
             <img src="/soitta.svg" className="logo scale-[3] mb-16" alt="Vite logo" />
           </a>
-          <h2 className='text-3xl mb-12 font-semibold'>The Beginning of a New Era</h2>
+          <h2 className='text-3xl font-semibold'>The Beginning of a New Era</h2>
+          <p className="mb-12 font-thin italic">Under Construction </p>
         </div>
-        <p className='pb-6 font-light'>
+        <p className='pb-6 font-normal'>
           For now, here are the links:
         </p>
         <a href='https://soittasoundworks.gumroad.com/l/nemesisvol1' className='text-white hover:text-red-300 transition-all duration-150 ease-in-out' target="_blank">Nemesis Vol.1</a>
