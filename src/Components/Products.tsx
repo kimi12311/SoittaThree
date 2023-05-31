@@ -1,11 +1,3 @@
-import React from 'react'
-import Typed from 'react-typed'
-
-const handleScroll = (elem : string) => {
-  const home = document.getElementById(elem);
-  home && home.scrollIntoView({behavior:"smooth", block:"start"});
-}
-
 const Products = () => {
   return (
     <div id="products" className='w-full py-[10rem] px-4'>

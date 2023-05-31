@@ -1,5 +1,3 @@
-import React from 'react'
-
 const handleScroll = (elem : string) => {
     const home = document.getElementById(elem);
     home && home.scrollIntoView({behavior:"smooth", block:"start"});
