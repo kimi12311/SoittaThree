@@ -6,7 +6,8 @@
 Soitta is a website dedicated to inspiring creative individuals in the music industry by providing tools and resources to aid
 with the process.
 
-The project is written in Typescript and uses React for the UI. Further tools used include Framer Motion.
+Tech Used: React, Typescript, Tailwind CSS
+
 
 - ✨Soittas Official Repository
 ## TODO
