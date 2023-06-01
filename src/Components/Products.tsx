@@ -1,11 +1,6 @@
 import { motion } from "framer-motion"
-import { useNavigate } from "react-router-dom";
 
 const Products = () => {
-    const navigate = useNavigate();
-    const routeChange = (pathString: string) => {
-      navigate(pathString);
-    };
   return (
     <motion.div
     initial={{opacity:0}}
