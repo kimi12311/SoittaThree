@@ -11,7 +11,7 @@ const Products = () => {
     <h1 className='text-center text-3xl font-normal mb-10'>Products</h1>
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-2 gap-8'>
         <div className='w-full flex flex-col my-4'>
-            <img src="Aurora.png" className='rounded-xl scale-[0.75] hover:scale-[0.76] ease-in-out transition-all duration-200'/>
+            <motion.img initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.8, ease:"easeIn"}} src="Aurora.png" className='rounded-xl scale-[0.75] hover:scale-[0.76] ease-in-out transition-all duration-200' loading="lazy"/>
             <h2 className='text-2xl font-normal text-center py-8'>Aurora - House Essentials</h2>
             <p className='text-center text-sm italic mb-2'>House, Deep House, Future Bounce</p>
             <div className='text-center font-medium'>
@@ -26,7 +26,7 @@ const Products = () => {
             </div>
         </div>
         <div className='w-full flex flex-col my-4'>
-            <img src="Botanical.png" className='rounded-xl scale-[0.75] hover:scale-[0.76] ease-in-out transition-all duration-200'/>
+        <motion.img initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.8, ease:"easeIn"}} src="Botanical.png" className='rounded-xl scale-[0.75] hover:scale-[0.76] ease-in-out transition-all duration-200' loading="lazy"/>
             <h2 className='text-2xl font-normal text-center py-8'>Botanical - Future Bass</h2>
             <p className='text-center text-sm italic mb-2'>Future Bass, Melodic Dubstep</p>
             <div className='text-center font-medium'>
@@ -39,7 +39,7 @@ const Products = () => {
             </div>
         </div>
         <div className='w-full flex flex-col my-4'>
-            <img src="Nemesis2.png" className='rounded-xl scale-[0.75] hover:scale-[0.76] ease-in-out transition-all duration-200'/>
+        <motion.img initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.8, ease:"easeIn"}} src="Nemesis2.png" className='rounded-xl scale-[0.75] hover:scale-[0.76] ease-in-out transition-all duration-200' loading="lazy"/>
             <h2 className='text-2xl font-normal text-center py-8'>Nemesis Vol.1</h2>
             <p className='text-center text-sm italic mb-2'>Hybrid Trap, Dubstep</p>
             <div className='text-center font-medium'>
@@ -52,7 +52,7 @@ const Products = () => {
             </div>
         </div>
         <div className='w-full flex flex-col my-4'>
-            <img src="Piano.png" className='rounded-xl scale-[0.75] hover:scale-[0.76] ease-in-out transition-all duration-200'/>
+        <motion.img initial={{opacity:0}} animate={{opacity:11}} transition={{duration:0.8, ease:"easeIn"}} src="Piano.png" className='rounded-xl scale-[0.75] hover:scale-[0.76] ease-in-out transition-all duration-200' loading="lazy"/>
             <h2 className='text-2xl font-normal text-center py-8'>Interlude Piano</h2>
             <p className='text-center text-sm italic mb-2'>Any Genre</p>
             <div className='text-center font-medium'>

@@ -27,8 +27,8 @@ const Hero = () => {
         <div className="flex justify-center items-center pt-2">
           <Typed
             strings={splashText}
-            typeSpeed={120}
-            backSpeed={140}
+            typeSpeed={70}
+            backSpeed={100}
             loop
             className="md:text-3xl sm:text-2xl text-xl pl-2"
           />
