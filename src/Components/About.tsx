@@ -1,10 +1,12 @@
-const handleScroll = (elem : string) => {
-    const home = document.getElementById(elem);
-    home && home.scrollIntoView({behavior:"smooth", block:"start"});
-  }
+import { useNavigate } from "react-router-dom";
 
 const description = "We're all about making your music making easier, through samples and plugins. We strive to make your creativity shine through with minimal resistance, that's what we're about. So let's make some music!";
 const About = () => {
+  const navigate = useNavigate();
+  const routeChange = (pathString: string) => {
+    navigate(pathString);
+  };
+  
   return (
     <div className='w-full bg-[#0d0f0f79] py-16 px-4' id="about">
         <div className='max-w-[1240px] mx-auto grid md:grid-cols-2 text-center md:text-left'>
@@ -15,7 +17,7 @@ const About = () => {
                 <p className='text-lg font-light'>
                     {description}
                 </p>
-                <button onClick={() => handleScroll("products")} className='text-neutral-100 bg-cyan-800 w-[200px] rounded-md font-medium my-12 md:mx-0 mx-auto px-6 py-2 hover:bg-cyan-700 transition-all hover:rounded-lg'>Let's Get Going</button>
+                <button onClick={() => routeChange("/products")} className='text-neutral-100 bg-cyan-800 w-[200px] rounded-md font-medium my-12 md:mx-0 mx-auto px-6 py-2 hover:bg-cyan-700 transition-all hover:rounded-lg'>Let's Get Going</button>
             </div>
         </div>
     </div>

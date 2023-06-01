@@ -1,5 +1,17 @@
+import { motion } from "framer-motion"
+import { useNavigate } from "react-router-dom";
+
 const Products = () => {
+    const navigate = useNavigate();
+    const routeChange = (pathString: string) => {
+      navigate(pathString);
+    };
   return (
+    <motion.div
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration:0.4, ease:"easeInOut"}}
+    >
     <div id="products" className='w-full py-[10rem] px-4'>
     <h1 className='text-center text-3xl font-normal mb-10'>Products</h1>
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-2 gap-8'>
@@ -14,7 +26,8 @@ const Products = () => {
             </div>
             <div className='flex mx-auto space-x-6 mt-5'>
                 <button className='bg-rose-700 hover:bg-rose-600 transition-all duration-150 ease-in-out w-32 h-8 rounded-lg' onClick={() => open("https://soittasoundworks.gumroad.com/l/AuroraHouseEssentials")}>Direct Link</button>
-                <button className='bg-cyan-800 hover:bg-cyan-600 transition-all duration-150 ease-in-out w-32 h-8 rounded-lg' onClick={() => open("https://www.lootaudio.com/category/presets/Soitta-Soundworks/aurora-house-essentials-vol1")}>Loot Audio</button>
+                <button className='bg-cyan-700 hover:bg-cyan-600 transition-all duration-150 ease-in-out w-32 h-8 rounded-lg' onClick={() => open("https://www.lootaudio.com/category/presets/Soitta-Soundworks/aurora-house-essentials-vol1")}>Loot Audio</button>
+
             </div>
         </div>
         <div className='w-full flex flex-col my-4'>
@@ -59,6 +72,7 @@ const Products = () => {
         </div>
       </div>
     </div>
+    </motion.div>
   )
 }
 
