@@ -20,7 +20,7 @@ const Navbar = () => {
   }
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4">
-      <h1 className={open ? "opacity-0 text-5xl transition-all ease-in-out duration-150" : "text-5xl w-full font-semibold transition-all flex ease-in-out duration-500"}>SOITTA</h1>
+      <h1 className={open ? "opacity-0 text-5xl transition-all ease-in-out duration-150" : "text-5xl w-full hover:cursor-pointer font-semibold hover:text-blue-100 transition-all flex ease-in-out duration-500"} onClick={() => handleScroll("home")}>SOITTA</h1>
       <ul className="hidden md:flex md:uppercase">
         <li className="p-4"><Link to="/" onClick={() => handleScroll("home")} className="hover:text-sky-100 transition-all">Home</Link></li>
         <li className="p-4"><Link to="/" onClick={() => handleScroll("products")}  className="hover:text-sky-100 transition-all">Products</Link></li>
