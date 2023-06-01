@@ -34,7 +34,7 @@ const Navbar = () => {
       <div onClick={handleNav} className="block md:hidden">
         {!open ? <AiOutlineMenu size={20} /> : <AiOutlineClose size={20}/>}
       </div>
-      <div className={open ? "fixed left-0 top-0 w-[60%] h-full bg-[#070707] ease-in-out duration-300 transition-all" : "fixed left-[-75%]"}>
+      <div className={open ? "fixed left-0 top-0 w-[60%] h-full bg-[#070707] ease-in-out duration-300 transition-all z-10" : "fixed left-[-75%]"}>
         <h1 className="text-5xl w-full font-semibold m-6">MENU</h1>
         <ul className="pt-12 uppercase p-2">
           <li className="p-4 border-b border-b-gray-700"><Link to="/" onClick={() => handleNavAndScroll("home")}>Home</Link></li>
